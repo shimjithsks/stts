@@ -1,0 +1,16 @@
+.hero {
+  height: 80vh;
+  background-size: cover;
+}
+
+.hero h3, .hero p {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+section h2 {
+  font-weight: 700;
+}
+
+footer {
+  font-size: 0.9rem;
+}

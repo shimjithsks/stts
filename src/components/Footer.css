@@ -1,0 +1,68 @@
+.footer-section {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(164, 109, 4, 0.5); /* Semi-transparent brand color */
+  backdrop-filter: blur(10px);             /* Glass blur effect */
+  -webkit-backdrop-filter: blur(10px);     /* Safari support */
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Overlay for darker edges if needed */
+.footer-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.3)
+  ); /* subtle gradient overlay */
+  z-index: 1;
+}
+
+/* Content layering */
+.footer-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-section h5 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer-section .footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section .footer-links li a,
+.footer-section .footer-links li span {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.footer-section .footer-links li a:hover,
+.footer-section .footer-links li span:hover {
+  color: #d9232d;
+}
+
+.footer-section .social-icons a {
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+  transform: scale(1.2);
+  color: #d9232d;
+}
+
+.footer-section .border-top {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.footer-section .text-danger {
+  color: #d9232d !important;
+}

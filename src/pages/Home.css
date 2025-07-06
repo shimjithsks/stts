@@ -1,0 +1,55 @@
+.hero {
+  position: relative;
+  height: 80vh;
+  animation: bgMove 30s linear infinite alternate;
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
+
+
+.hero-small {
+  min-height: 30vh;
+}
+
+@media (max-width: 768px) {
+  .hero-small {
+    min-height: 35vh;
+  }
+}
+
+.what-we-offer-section {
+  background: #f8f9fa;
+}
+
+.offer-card i {
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover i {
+  transform: scale(1.2);
+}
+
+.offer-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.contact-banner {
+  background-color: #b37800;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+

@@ -1,0 +1,119 @@
+/* ==================== */
+/* Top Bar              */
+/* ==================== */
+.top-bar {
+  background-color: black;
+  font-size: 0.95rem;
+   position: relative;
+   z-index: 10;
+}
+
+.social-icon {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 100;
+}
+
+.welcome-text {
+  font-weight: 500;
+}
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.social-icons .social-icon:hover {
+  background: white;
+  color: #FF2B1C; /* invert color on hover */
+}
+
+
+.download-btn {
+  text-decoration: none !important;  /* Remove underline */
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  display: inline-block;  /* ensure button shape */
+}
+
+.download-btn:hover {
+  background: white;
+  color: #FF2B1C;
+  border-color: white;
+  text-decoration: none;  /* double sure */
+}
+
+
+/* ==================== */
+/* Middle Bar           */
+/* ==================== */
+.middle-bar {
+  background-color: #FF2B1C; /* red background */
+}
+
+/* Make sure middle-bar content is above the overlay */
+.middle-bar .container {
+  position: relative;
+  z-index: 1;
+}
+
+.logo h2 {
+  color: white;
+}
+
+/* ==================== */
+/* Contact Info Section */
+/* ==================== */
+.contact-info {
+  color: white;
+  width: 100%;
+}
+
+.contact-info .contact-item {
+  flex: 1;                /* each contact block takes equal space */
+  min-width: 220px;       /* makes them stack nicely on small screens */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
+  color: black;           /* black icons */
+}
+
+/* ==================== */
+/* Navbar Menu Links    */
+/* ==================== */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: none !important;
+}
+
+.menu-link.active {
+  border: 2px solid white; /* match your btn-danger color */
+  border-radius: 5px;
+  padding: 6px 12px;
+  text-decoration: none !important;
+  color: white !important; /* optional: give active color */
+  transition: all 0.3s ease;
+}
+

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/STTSWebsite/static/css/main.c3c607ae.css",
+    "main.js": "/STTSWebsite/static/js/main.d2438519.js",
+    "static/media/move_2.jpg": "/STTSWebsite/static/media/move_2.2873b6d92dfafec6bf23.jpg",
+    "static/media/move_1.jpg": "/STTSWebsite/static/media/move_1.ba21cf690ad4ab676754.jpg",
+    "static/media/bootstrap-icons.woff?": "/STTSWebsite/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/STTSWebsite/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/move_4.jpg": "/STTSWebsite/static/media/move_4.dfa886454390c10b650f.jpg",
+    "static/media/move_3.jpg": "/STTSWebsite/static/media/move_3.8120ab35cac9b86c24dd.jpg",
+    "static/media/logo.png": "/STTSWebsite/static/media/logo.ca1eac1cd3aaaa95d8a2.png",
+    "index.html": "/STTSWebsite/index.html",
+    "main.c3c607ae.css.map": "/STTSWebsite/static/css/main.c3c607ae.css.map",
+    "main.d2438519.js.map": "/STTSWebsite/static/js/main.d2438519.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3c607ae.css",
+    "static/js/main.d2438519.js"
+  ]
+}

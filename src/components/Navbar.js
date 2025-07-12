@@ -34,9 +34,9 @@ export default function Navbar() {
             <div className="social-icon" onClick={() => window.open('https://twitter.com', '_blank')}>
               <i className="bi bi-twitter"></i>
             </div>
-            <a href="/stts/files/Secret_profile.pdf" className="download-btn" download>
-              Download Profile
-            </a>
+<a href={`${process.env.PUBLIC_URL}/files/secret_profile.pdf`} className="download-btn" download>
+  Download Profile
+</a>
           </div>
         </div>
       </div>

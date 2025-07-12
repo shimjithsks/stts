@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,17 +15,17 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/why-choose-us" element={<WhyChooseUs />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </Router>
+   <BrowserRouter basename="/STTSWebsite">
+  <Navbar />
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/services" element={<Services />} />
+    <Route path="/why-choose-us" element={<WhyChooseUs />} />
+    <Route path="/contact" element={<Contact />} />
+  </Routes>
+  <Footer />
+</BrowserRouter>
   );
 }
 

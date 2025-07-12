@@ -6,42 +6,38 @@ import { NavLink } from 'react-router-dom';
 export default function Navbar() {
   return (
     <>
+      {/* WhatsApp Floating Icon */}
+      <div
+        className="whatsapp-float"
+        onClick={() =>
+          window.open(
+            'https://wa.me/97430800072?text=Hi%20SecretTTS%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.',
+            '_blank'
+          )
+        }
+      >
+        <i className="bi bi-whatsapp fs-4"></i>
+      </div>
+
+
       {/* Top bar */}
       <div className="top-bar text-white py-2">
         <div className="container d-flex justify-content-between align-items-center flex-wrap">
           <span className="welcome-text">Welcome To Secret Trading And Transport Service</span>
-    <div className="social-icons d-flex align-items-center gap-3">
-  <div
-    className="social-icon"
-    style={{ cursor: 'pointer' }}
-    onClick={() => window.open('https://www.facebook.com', '_blank')}
-  >
-    <i className="bi bi-facebook"></i>
-  </div>
-  <div
-    className="social-icon"
-    style={{ cursor: 'pointer' }}
-    onClick={() => window.open('https://www.instagram.com', '_blank')}
-  >
-    <i className="bi bi-instagram"></i>
-  </div>
-  <div
-    className="social-icon"
-    style={{ cursor: 'pointer' }}
-    onClick={() => window.open('https://twitter.com', '_blank')}
-  >
-    <i className="bi bi-twitter"></i>
-  </div>
-<a
-  href="/Secret_Profile.pdf"
-  className="download-btn"
-  download
->
-  DOWNLOAD PROFILE
-</a>
-</div>
-
-
+          <div className="social-icons d-flex align-items-center gap-3">
+            <div className="social-icon" onClick={() => window.open('https://www.facebook.com', '_blank')}>
+              <i className="bi bi-facebook"></i>
+            </div>
+            <div className="social-icon" onClick={() => window.open('https://www.instagram.com', '_blank')}>
+              <i className="bi bi-instagram"></i>
+            </div>
+            <div className="social-icon" onClick={() => window.open('https://twitter.com', '_blank')}>
+              <i className="bi bi-twitter"></i>
+            </div>
+            <a href="/Secret_Profile.pdf" className="download-btn" download>
+              DOWNLOAD PROFILE
+            </a>
+          </div>
         </div>
       </div>
 
@@ -58,7 +54,6 @@ export default function Navbar() {
               <div
                 className="contact-item"
                 onClick={() => window.open('https://maps.google.com/?q=Industrial Area, Street #36 (545), Doha Qatar', '_blank')}
-                style={{ cursor: 'pointer' }}
               >
                 <i className="bi bi-geo-alt-fill me-2"></i>
                 <div>
@@ -66,30 +61,19 @@ export default function Navbar() {
                 </div>
               </div>
 
-              <div
-                className="contact-item"
-                style={{ cursor: 'pointer' }}
-              >
+              <div className="contact-item">
                 <i className="bi bi-telephone-fill me-2"></i>
                 <div className="d-flex flex-column">
-                  <span
-                    onClick={() => window.location.href = 'tel:+97430800072'}
-                  >
+                  <span onClick={() => (window.location.href = 'tel:+97430800072')}>
                     <strong>Call Us:</strong> (+974) 3080 0072
                   </span>
-                  <span
-                    onClick={() => window.location.href = 'tel:+97477723298'}
-                  >
+                  <span onClick={() => (window.location.href = 'tel:+97477723298')}>
                     (+974) 7772 3298
                   </span>
                 </div>
               </div>
 
-              <div
-                className="contact-item"
-                onClick={() => window.location.href = 'mailto:info@stts.qa'}
-                style={{ cursor: 'pointer' }}
-              >
+              <div className="contact-item" onClick={() => (window.location.href = 'mailto:info@stts.qa')}>
                 <i className="bi bi-envelope-fill me-2"></i>
                 <div>
                   <strong>Mail Us:</strong> info@stts.qa

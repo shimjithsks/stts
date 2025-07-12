@@ -5,6 +5,7 @@ import move2 from '../assets/move_2.jpg';
 import move3 from '../assets/move_3.jpg';
 import move4 from '../assets/move_4.jpg';
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom'; 
 
 export default function Home() {
   const images = [move1, move2, move3, move4];
@@ -37,7 +38,7 @@ export default function Home() {
       <p className="lead fs-4 animate-text-delay" style={{ color: '#fff' }}>
         Your trusted partner for transportation in Qatar
       </p>
-      <a href="/contact" className="btn btn-danger btn-lg mt-4 animate-btn">Request Our Services</a>
+      <Link to="/contact" className="btn btn-danger btn-lg mt-4 animate-btn">Request Our Services</Link>
     </div>
   </div>
 </header>
@@ -70,7 +71,7 @@ export default function Home() {
             Unparalleled customer support
           </li>
         </ul>
-        <a href="/about" className="btn btn-danger btn-lg mt-4">Read More</a>
+      <Link to="/about" className="btn btn-danger btn-lg mt-4">Read More</Link>
       </div>
 
       {/* Our Approach */}
@@ -96,7 +97,7 @@ export default function Home() {
             Dedicated account managers
           </li>
         </ul>
-        <a href="/contact" className="btn btn-danger btn-lg mt-4">Get a Quote</a>
+      <Link to="/contact" className="btn btn-danger btn-lg mt-4">Get a Quote</Link>
       </div>
     </div>
   </div>
@@ -196,7 +197,7 @@ Our mission is to deliver unmatched customer service, establishing ourselves as 
           </div>
 
           <div className="text-center mt-4">
-            <a href="/services" className="btn btn-danger btn-lg">Explore All Services</a>
+      <Link to="/services" className="btn btn-danger btn-lg">Explore All Services</Link>
           </div>
         </div>
       </section>
@@ -283,7 +284,7 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
     </div>
 
     <div className="text-center mt-4">
-      <a href="/fleet" className="btn btn-danger btn-lg">View Full Fleet</a>
+            <Link to="/fleet" className="btn btn-danger btn-lg">View Full Fleet</Link>
     </div>
   </div>
 </section>

@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   return (
-   <BrowserRouter basename="/STTSWebsite">
+   <BrowserRouter basename="/stts">
   <Navbar />
   <Routes>
     <Route path="/" element={<Home />} />

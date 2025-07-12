@@ -1,3 +1,6 @@
+/* ==================== */
+/* Hero Section          */
+/* ==================== */
 .hero {
   position: relative;
   height: 80vh;
@@ -13,7 +16,6 @@
   }
 }
 
-
 .hero-small {
   min-height: 30vh;
 }
@@ -24,6 +26,9 @@
   }
 }
 
+/* ==================== */
+/* What We Offer Section */
+/* ==================== */
 .what-we-offer-section {
   background: #f8f9fa;
 }
@@ -41,9 +46,12 @@
 }
 
 .offer-card:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+/* ==================== */
+/* Contact Banner        */
+/* ==================== */
 .contact-banner {
   background-color: #b37800;
   background-repeat: no-repeat;
@@ -51,5 +59,95 @@
   background-position: center;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
+}
+
+/* ============================== */
+/* Trusted Clients Section       */
+/* ============================== */
+.trusted-clients {
+  background-color: #ffffff;
+  padding: 3rem 0;
+}
+
+.trusted-clients h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.trusted-clients p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+
+/* Scrolling wrapper */
+.clients-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Animated client logos scroll */
+.clients-carousel {
+  display: flex;
+  gap: 2rem;
+  animation: scrollRightToLeft 25s linear infinite;
+  padding: 0.5rem 0;
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Client logo styling */
+.trusted-clients .client-logo-wrapper {
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border: 3px solid #FF2B1C; /* Red border */
+  border-radius: 10%; /* ✅ Make the wrapper circular */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+
+.trusted-clients .client-logo-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.trusted-clients .client-logo {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.vehicle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional: for vertical centering */
+  flex-direction: column;
+}
+
+.vehicle-image {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FF2B1C;
+  transition: transform 0.3s ease;
+}
+
+.vehicle-image:hover {
+  transform: scale(1.05);
 }
 

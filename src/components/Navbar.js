@@ -50,36 +50,43 @@ export default function Navbar() {
               <h2 className="m-0 fw-bold">SecretTTS</h2>
             </div>
 
-            <div className="contact-info d-flex justify-content-end flex-grow-1 flex-wrap gap-4">
-              <div
-                className="contact-item"
-                onClick={() => window.open('https://maps.google.com/?q=Industrial Area, Street #36 (545), Doha Qatar', '_blank')}
-              >
-                <i className="bi bi-geo-alt-fill me-2"></i>
-                <div>
-                  <strong>Locate Us:</strong> Industrial Area, Street #36 (545), Doha Qatar
-                </div>
-              </div>
+<div className="contact-info d-flex justify-content-end flex-grow-1 flex-wrap gap-4">
 
-              <div className="contact-item">
-                <i className="bi bi-telephone-fill me-2"></i>
-                <div className="d-flex flex-column">
-                  <span onClick={() => (window.location.href = 'tel:+97430800072')}>
-                    <strong>Call Us:</strong> (+974) 3080 0072
-                  </span>
-                  <span onClick={() => (window.location.href = 'tel:+97477723298')}>
-                    (+974) 7772 3298
-                  </span>
-                </div>
-              </div>
+  <a
+    href="https://maps.google.com/?q=Industrial Area, Street #36 (545), Doha Qatar"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="contact-item text-decoration-none text-white"
+  >
+    <i className="bi bi-geo-alt-fill me-2"></i>
+    <div>
+      <strong>Locate Us:</strong> Industrial Area, Street #36 (545), Doha Qatar
+    </div>
+  </a>
 
-              <div className="contact-item" onClick={() => (window.location.href = 'mailto:info@stts.qa')}>
-                <i className="bi bi-envelope-fill me-2"></i>
-                <div>
-                  <strong>Mail Us:</strong> info@stts.qa
-                </div>
-              </div>
-            </div>
+  <a
+    href="tel:+97430800072"
+    className="contact-item text-decoration-none text-white"
+  >
+    <i className="bi bi-telephone-fill me-2"></i>
+    <div className="d-flex flex-column">
+      <span><strong>Call Us:</strong> (+974) 3080 0072</span>
+      <span>(+974) 7772 3298</span>
+    </div>
+  </a>
+
+  <a
+    href="mailto:info@stts.qa"
+    className="contact-item text-decoration-none text-white"
+  >
+    <i className="bi bi-envelope-fill me-2"></i>
+    <div>
+      <strong>Mail Us:</strong> info@stts.qa
+    </div>
+  </a>
+
+</div>
+
           </div>
 
           {/* Navigation menu */}

@@ -42,7 +42,6 @@ export default function Home() {
   </div>
 </header>
 
-
       {/* Dual-column aim/solution section */}
 <section className="solution-section py-5 bg-white text-dark">
   <div className="container">
@@ -102,9 +101,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
-
-
 
       {/* Our Vision section */}
       <section
@@ -232,59 +228,122 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
     <div className="mt-5">
     </div>
   </div>
-</section>{/* Our Achievements Section */}
-<section className="our-achievements-section py-5 bg-light">
+</section>
+
+{/* Our Vehicles section */}
+<section className="our-vehicles-section py-5 bg-light">
   <div className="container" data-aos="fade-up">
     <div className="text-center mb-5">
-      <h2 className="fw-bold display-5 text-black">Our Achievements</h2>
+      <h2 className="fw-bold display-5">Our Vehicles</h2>
       <p className="lead text-muted">
-        Discover the scale and excellence of our transportation solutions across Qatar.
+        Explore our diverse fleet designed for safety, efficiency, and luxury across Qatar.
       </p>
     </div>
-    <div className="row g-4 justify-content-center">
+
+    <div className="row g-4">
+      <div className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div className="vehicle-card bg-white p-4 h-100 shadow rounded text-center">
+          <img src={move1} alt="Bus" className="vehicle-image mb-3"  />
+          <h5 className="fw-bold mb-2">Bus</h5>
+          <p className="text-muted">
+            Spacious, air-conditioned buses suitable for staff, schools, and large group transport.
+          </p>
+        </div>
+      </div>
+
+      <div className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div className="vehicle-card bg-white p-4 h-100 shadow rounded text-center">
+          <img src={move2} alt="Truck" className="vehicle-image mb-3" />
+          <h5 className="fw-bold mb-2">Truck</h5>
+          <p className="text-muted">
+            Heavy-duty trucks for logistics, supply chain, and construction needs across the region.
+          </p>
+        </div>
+      </div>
+
+      <div className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div className="vehicle-card bg-white p-4 h-100 shadow rounded text-center">
+          <img src={move3} alt="Tanker" className="vehicle-image mb-3" />
+          <h5 className="fw-bold mb-2">Tanker</h5>
+          <p className="text-muted">
+            Safe and certified tankers for transporting fuel, water, and other industrial liquids.
+          </p>
+        </div>
+      </div>
+
+      <div className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+        <div className="vehicle-card bg-white p-4 h-100 shadow rounded text-center">
+          <img src={move4} alt="Cars" className="vehicle-image mb-3" />
+          <h5 className="fw-bold mb-2">Cars</h5>
+          <p className="text-muted">
+            Well-maintained executive and economy cars tailored for VIP transport and daily rentals.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="text-center mt-4">
+      <a href="/fleet" className="btn btn-danger btn-lg">View Full Fleet</a>
+    </div>
+  </div>
+</section>
+
+{/* Our Achievements Section (Vision-style background) */}
+<section
+  className="our-achievements-section position-relative text-white text-center py-5"
+   style={{
+    background: `linear-gradient(rgba(168, 110, 0, 0.7), rgba(0, 0, 0, 0.6)), url(${move3}) center center/cover no-repeat`,
+  }}
+>
+  <div className="container" data-aos="fade-up">
+    <h2 className="fw-bold display-5 mb-4">Our Achievements</h2>
+    <p className="lead mx-auto" style={{ maxWidth: '900px' }}>
+      Discover the scale and excellence of our transportation solutions across Qatar.
+    </p>
+    <div className="row mt-5 g-4 justify-content-center">
       <div className="col-6 col-md-2">
         <div className="text-center">
-          <i className="bi bi-clock-history display-4 mb-3 text-danger"></i>
-          <h3 className="fw-bold text-black">
+          <i className="bi bi-clock-history display-4 mb-3 text-white"></i>
+          <h3 className="fw-bold text-white">
             <CountUp end={22} duration={3} />
           </h3>
-          <p className="text-muted">Years</p>
+          <p className="text-white">Years</p>
         </div>
       </div>
       <div className="col-6 col-md-2">
         <div className="text-center">
-          <i className="bi bi-card-checklist display-4 mb-3 text-danger"></i>
-          <h3 className="fw-bold text-black">
+          <i className="bi bi-card-checklist display-4 mb-3 text-white"></i>
+          <h3 className="fw-bold text-white">
             <CountUp end={7} duration={3} />
           </h3>
-          <p className="text-muted">Services</p>
+          <p className="text-white">Services</p>
         </div>
       </div>
       <div className="col-6 col-md-2">
         <div className="text-center">
-          <i className="bi bi-person-fill display-4 mb-3 text-danger"></i>
-          <h3 className="fw-bold text-black">
+          <i className="bi bi-person-fill display-4 mb-3 text-white"></i>
+          <h3 className="fw-bold text-white">
             <CountUp end={4000} duration={3} separator="," suffix="+" />
           </h3>
-          <p className="text-muted">Staff</p>
+          <p className="text-white">Staff</p>
         </div>
       </div>
       <div className="col-6 col-md-2">
         <div className="text-center">
-          <i className="bi bi-truck-front display-4 mb-3 text-danger"></i>
-          <h3 className="fw-bold text-black">
+          <i className="bi bi-truck-front display-4 mb-3 text-white"></i>
+          <h3 className="fw-bold text-white">
             <CountUp end={700} duration={3} suffix="+" />
           </h3>
-          <p className="text-muted">Fleet</p>
+          <p className="text-white">Fleet</p>
         </div>
       </div>
       <div className="col-6 col-md-2">
         <div className="text-center">
-          <i className="bi bi-people display-4 mb-3 text-danger"></i>
-          <h3 className="fw-bold text-black">
+          <i className="bi bi-people display-4 mb-3 text-white"></i>
+          <h3 className="fw-bold text-white">
             <CountUp end={5000} duration={3} separator="," suffix="+" />
           </h3>
-          <p className="text-muted">Clients</p>
+          <p className="text-white">Clients</p>
         </div>
       </div>
     </div>
@@ -292,9 +351,26 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
 </section>
 
 
-
-
-
+{/* Trusted Clients Section */}
+<section className="trusted-clients py-5 bg-white">
+  <div className="container" data-aos="fade-up">
+    <div className="text-center mb-5">
+      <h2 className="fw-bold display-5 text-black">Our Valued Clients</h2>
+      <p className="lead text-muted">
+        We Promised. They Trusted. We Delivered.
+      </p>
+    </div>
+    <div className="clients-carousel-wrapper">
+      <div className="clients-carousel d-flex flex-nowrap">
+        {[move1, move2, move3, move4, move1, move2, move3, move4].map((logo, index) => (
+          <div className="client-logo-wrapper mx-3" key={index}>
+            <img src={logo} alt={`Client ${index + 1}`} className="client-logo" />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
     </>
   );

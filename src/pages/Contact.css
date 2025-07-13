@@ -1,0 +1,67 @@
+.contact-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.contact-banner h1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+.contact-banner p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.contact-hero {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-logo {
+  height: 60px;
+}
+
+.contact-form-section {
+  background-color: #f8f9fa;
+}
+
+.quote-form input,
+.quote-form textarea {
+  border-radius: 5px;
+}
+
+.contact-sidebar h5 {
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-sidebar p,
+.contact-sidebar a {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.contact-sidebar .btn {
+  margin-bottom: 0.75rem;
+}
+
+.btn-call-custom {
+  border: 2px solid white;
+  color: white !important;
+  font-weight: 700;
+  padding: 12px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-call-custom:hover {
+  background-color: #d32013; /* slightly darker red on hover */
+  transform: scale(1.02);
+}
+

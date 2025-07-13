@@ -1,11 +1,62 @@
 /* ==================== */
 /* Top Bar              */
 /* ==================== */
+.top-bar,
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1030; /* Bootstrap's default navbar z-index */
+}
+
+/* ==================== */
+/* Top Bar              */
+/* ==================== */
 .top-bar {
-  background-color: black;
+  background-color: black !important;
   font-size: 0.95rem;
-   position: relative;
-   z-index: 10;
+  top: 0;
+  padding: 8px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+
+/* Stack on small devices */
+.top-bar .container {
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .top-bar .container {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* ==================== */
+/* Menu Bar             */
+/* ==================== */
+.menu-bar {
+  background-color: #FF2B1C;
+  position: fixed;
+  width: 100%;
+  top: 48px; /* Height of top-bar */
+  z-index: 1031;
+  padding: 10px 0;
+}
+
+@media (max-width: 767.98px) {
+  .menu-bar {
+    top: 70px; /* Extra space for stacked top-bar */
+  }
+}
+
+/* Body padding to account for both bars */
+body {
+  padding-top: 120px; /* Enough for stacked top + menu bars */
+  overflow-x: hidden;
 }
 
 .social-icon {
@@ -141,3 +192,74 @@
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+
+.menu-bar {
+  background-color: #FF2B1C;
+}
+
+.menu-link {
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  transition: all 0.3s ease;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* ==================== */
+/* Download Profile Icon */
+/* ==================== */
+.download-profile-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  padding: 0 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  transition: background 0.3s, color 0.3s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.download-profile-icon:hover {
+  background-color: white;
+  color: #FF2B1C;
+  border-color: white;
+}
+.logo-with-icon .tt-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.diamond-icon {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #FFD700;
+  animation: swayDiamond 1.5s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+@keyframes swayDiamond {
+  0% {
+    transform: translateX(-50%) translateX(-10px);
+  }
+  100% {
+    transform: translateX(-50%) translateX(10px);
+  }
+}
+
+.tt-wrapper {
+  position: relative;
+  display: inline-block;
+}
+

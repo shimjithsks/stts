@@ -4,6 +4,13 @@ import logo from '../assets/logo.png';
 import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
+  const handleNavLinkClick = () => {
+    const navbarCollapse = document.querySelector('.navbar-collapse.show');
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove('show');
+    }
+  };
+
   return (
     <>
       {/* WhatsApp Floating Icon */}
@@ -19,104 +26,67 @@ export default function Navbar() {
         <i className="bi bi-whatsapp fs-4"></i>
       </div>
 
-
-      {/* Top bar */}
+      {/* Top Bar */}
       <div className="top-bar text-white py-2">
         <div className="container d-flex justify-content-between align-items-center flex-wrap">
           <span className="welcome-text">Welcome To Secret Trading And Transport Service</span>
           <div className="social-icons d-flex align-items-center gap-3">
-            <div className="social-icon" onClick={() => window.open('https://www.facebook.com', '_blank')}>
-              <i className="bi bi-facebook"></i>
-            </div>
-            <div className="social-icon" onClick={() => window.open('https://www.instagram.com', '_blank')}>
-              <i className="bi bi-instagram"></i>
-            </div>
-            <div className="social-icon" onClick={() => window.open('https://twitter.com', '_blank')}>
-              <i className="bi bi-twitter"></i>
-            </div>
-<a href={`${process.env.PUBLIC_URL}/files/secret_profile.pdf`} className="download-btn" download>
-  Download Profile
+            <a onClick={() => window.open('https://www.facebook.com', '_blank')} className="social-icon"><i className="bi bi-facebook"></i></a>
+            <a onClick={() => window.open('https://www.instagram.com', '_blank')} className="social-icon"><i className="bi bi-instagram"></i></a>
+            <a onClick={() => window.open('https://www.twitter.com', '_blank')} className="social-icon"><i className="bi bi-twitter"></i></a>
+           <a
+  href={`${process.env.PUBLIC_URL}/files/secret_profile.pdf`}
+  className="download-profile-icon"
+  download
+>
+  DOWNLOAD PROFILE
 </a>
           </div>
         </div>
       </div>
 
-      {/* Middle section */}
-      <div className="middle-bar py-3 position-relative">
-        <div className="container d-flex flex-column gap-2">
-          <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4">
-            <div className="logo d-flex align-items-center gap-2">
-              <img src={logo} alt="SecretTTS" height="100" />
-              <h2 className="m-0 fw-bold">SecretTTS</h2>
-            </div>
-
-<div className="contact-info d-flex justify-content-end flex-grow-1 flex-wrap gap-4">
-
-  <a
-    href="https://maps.google.com/?q=Industrial Area, Street #36 (545), Doha Qatar"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="contact-item text-decoration-none text-white"
-  >
-    <i className="bi bi-geo-alt-fill me-2"></i>
-    <div>
-      <strong>Locate Us:</strong> Industrial Area, Street #36 (545), Doha Qatar
-    </div>
-  </a>
-
-  <a
-    href="tel:+97430800072"
-    className="contact-item text-decoration-none text-white"
-  >
-    <i className="bi bi-telephone-fill me-2"></i>
-    <div className="d-flex flex-column">
-      <span><strong>Call Us:</strong> (+974) 3080 0072</span>
-      <span>(+974) 7772 3298</span>
-    </div>
-  </a>
-
-  <a
-    href="mailto:info@stts.qa"
-    className="contact-item text-decoration-none text-white"
-  >
-    <i className="bi bi-envelope-fill me-2"></i>
-    <div>
-      <strong>Mail Us:</strong> info@stts.qa
-    </div>
-  </a>
-
-</div>
-
+      {/* Logo + Menu */}
+      <div className="menu-bar px-4 py-2">
+        <div className="container d-flex justify-content-between align-items-center flex-wrap">
+          <div className="logo d-flex align-items-center">
+            <img src={logo} alt="SecretTTS" height="60" />
+           <h2 className="m-0 fw-bold text-white ms-2 position-relative logo-with-icon">
+  Secret
+  <span className="tt-highlight position-relative">
+    TT
+    <i className="bi bi-gem diamond-icon"></i>
+  </span>
+  Service
+</h2>
           </div>
 
-          {/* Navigation menu */}
-          <nav className="navbar navbar-expand-lg py-2 w-100" style={{ backgroundColor: 'transparent' }}>
-            <div className="container px-0">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <NavLink className="nav-link menu-link" to="/">HOME</NavLink>
+          <nav className="navbar navbar-expand-lg">
+            <button
+              className="navbar-toggler text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto d-flex align-items-center gap-3">
+                {[
+                  { path: '/', label: 'HOME' },
+                  { path: '/why-choose-us', label: 'WHY CHOOSE US' },
+                  { path: '/services', label: 'WHAT WE OFFER' },
+                  { path: '/fleet', label: 'OUR FLEET' },
+                  { path: '/gallery', label: 'GALLERY' },
+                  { path: '/contact', label: 'CONTACT US' },
+                ].map((item, idx) => (
+                  <li className="nav-item" key={idx}>
+                    <NavLink className="nav-link menu-link" to={item.path} onClick={handleNavLinkClick}>
+                      {item.label}
+                    </NavLink>
                   </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link menu-link" to="/why-choose-us">WHY CHOOSE US</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link menu-link" to="/services">WHAT WE OFFER</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link menu-link" to="/fleet">OUR FLEET</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link menu-link" to="/gallery">GALLERY</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link menu-link" to="/contact">CONTACT US</NavLink>
-                  </li>
-                </ul>
-              </div>
+                ))}
+              </ul>
             </div>
           </nav>
         </div>

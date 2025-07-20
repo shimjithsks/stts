@@ -22,57 +22,74 @@ export default function WhyChooseUs() {
         </div>
       </header>
 
-      {/* Speciality Section */}
-      <section className="speciality-section py-5">
-        <div className="container">
-          <div className="row align-items-center">
-            {/* Left Text */}
-            <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
-              <h2 className="fw-bold mb-3">Our Speciality</h2>
-              <p className="text-muted fs-5">
-                We offer comprehensive assistance for all your transportation-related inquiries. Our commitment is to deliver high-quality services through thoroughly maintained, clean, and regularly inspected vehicles, ensuring a smooth and worry-free experience for our clients.
-              </p>
-              <img
-                src={carImage}
-                alt="Luxury Car"
-                className="img-fluid mt-4"
-              />
-            </div>
+    {/* Speciality Section */}
+<section className="speciality-section py-5">
+  <div className="container">
+    
+    {/* Full-width Welcome Text */}
+    <div className="row mb-5">
+      <div className="col-12">
+        <h2 className="fw-bold mb-3 text-center text-lg-start">
+          Welcome To Trading and Transport Service
+        </h2>
+        <p className="text-muted fs-6 text-center text-lg-start">
+          STTS (Secret Trading & Transport Services) has been a trusted name in Qatar's transportation industry for over a decade. Known for our professionalism, integrity, and operational excellence, we take great pride in being recognized as one of the leading providers of reliable and diverse transport solutions.
+          <br /><br />
+          With an extensive fleet catering to various needs, STTS stands as your comprehensive partner for all transportation requirements. Whether it’s daily commuting, staff transfers, or large-scale logistics, we deliver unmatched service quality and efficiency that our clients have come to rely on.
+        </p>
+      </div>
+    </div>
 
-            {/* Right Icon List */}
-<div className="col-lg-6">
-  <ul className="list-unstyled">
-    {[
-      { icon: 'bi-cash-coin', text: 'Competitive Pricing Without Sacrificing Quality' },
-      { icon: 'bi-calendar-check-fill', text: 'Seamless Rental Choices for Both Short-Term and Long-Term Needs' },
-      { icon: 'bi-person-badge-fill', text: 'Trained, Professional, and Courteous Drivers' },
-      { icon: 'bi-check2-circle', text: 'Well-Maintained, Spotless, and Thoroughly Checked Vehicles' },
-      { icon: 'bi-clock-history', text: '24/7 Emergency Roadside Support' },
-    ].map((item, index) => (
-      <li
-        key={index}
-        className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mb-4"
-      >
-        <div
-          className="d-flex justify-content-center align-items-center rounded-circle me-sm-3 mb-2 mb-sm-0 text-white flex-shrink-0"
-          style={{
-            width: '60px',
-            height: '60px',
-            backgroundColor: '#db2e2eff',
-            fontSize: '1.5rem',
-          }}
-        >
-          <i className={`bi ${item.icon}`}></i>
-        </div>
-        <span className="fs-6 fs-md-5 fw-medium">{item.text}</span>
-      </li>
-    ))}
-  </ul>
-</div>
+    {/* Our Speciality + Image + Icon List (side by side) */}
+    <div className="row align-items-center">
+      
+      {/* Left Text & Image */}
+      <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+        <h2 className="fw-bold mb-3">Our Speciality</h2>
+        <p className="text-muted fs-6">
+          We offer comprehensive assistance for all your transportation-related inquiries. Our commitment is to deliver high-quality services through thoroughly maintained, clean, and regularly inspected vehicles, ensuring a smooth and worry-free experience for our clients.
+        </p>
+        <img
+          src={carImage}
+          alt="Luxury Car"
+          className="img-fluid mt-4"
+        />
+      </div>
 
-          </div>
-        </div>
-      </section>
+      {/* Right Icon List */}
+      <div className="col-lg-6">
+        <ul className="list-unstyled">
+          {[
+            { icon: 'bi-cash-coin', text: 'Competitive Pricing Without Sacrificing Quality' },
+            { icon: 'bi-calendar-check-fill', text: 'Seamless Rental Choices for Both Short-Term and Long-Term Needs' },
+            { icon: 'bi-person-badge-fill', text: 'Trained, Professional, and Courteous Drivers' },
+            { icon: 'bi-check2-circle', text: 'Well-Maintained, Spotless, and Thoroughly Checked Vehicles' },
+            { icon: 'bi-clock-history', text: '24/7 Emergency Roadside Support' },
+          ].map((item, index) => (
+            <li
+              key={index}
+              className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mb-4"
+            >
+              <div
+                className="d-flex justify-content-center align-items-center rounded-circle me-sm-3 mb-2 mb-sm-0 text-white flex-shrink-0"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  backgroundColor: '#db2e2eff',
+                  fontSize: '1.5rem',
+                }}
+              >
+                <i className={`bi ${item.icon}`}></i>
+              </div>
+              <span className="fs-6 fs-md-5 fw-medium">{item.text}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
 
  {/* Our Commitment & Our Approach Section */}
 <section className="py-5 bg-white text-dark">
@@ -82,7 +99,7 @@ export default function WhyChooseUs() {
       {/* Our Commitment */}
       <div className="col-md-6">
         <h3 className="fw-bold mb-3">Our Commitment</h3>
-        <p className="mb-4 fs-5 text-muted">
+        <p className="mb-4 fs-6 text-muted">
           We strive to redefine transportation excellence by combining luxury, safety, and comfort. Our fully-licensed and insured fleet ensures peace of mind for every journey.
         </p>
         <ul className="list-unstyled">
@@ -110,7 +127,7 @@ export default function WhyChooseUs() {
       {/* Our Approach */}
       <div className="col-md-6">
         <h3 className="fw-bold mb-3">Our Approach</h3>
-        <p className="mb-4 fs-5 text-muted">
+        <p className="mb-4 fs-6 text-muted">
           Tailored solutions for every transportation need—whether corporate, personal, or event-based. We help you optimize your travel costs without compromising on quality.
         </p>
         <ul className="list-unstyled">

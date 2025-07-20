@@ -48,7 +48,7 @@ export default function Footer() {
             <ul className="list-unstyled footer-links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/why-choose-us">Why Choose Us</Link></li>
-              <li><Link to="/services">What We Offer</Link></li>
+              <li><Link to="/services">Our Services</Link></li>
               <li><Link to="/fleet">Our Fleet</Link></li>
               <li><Link to="/gallery">Gallery</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>

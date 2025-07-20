@@ -148,7 +148,7 @@ Our mission is to deliver unmatched customer service, establishing ourselves as 
       <section className="what-we-offer-section py-5 bg-light">
         <div className="container" data-aos="fade-up">
           <div className="text-center mb-5">
-            <h2 className="fw-bold display-5">What We Offer</h2>
+            <h2 className="fw-bold display-5">Our Services</h2>
             <p className="lead text-muted">
               Comprehensive transport & rental solutions designed for comfort, safety, and reliability.
             </p>

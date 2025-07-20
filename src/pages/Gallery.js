@@ -17,11 +17,8 @@ const fleetTabs = {
     items: [
       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
       { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
+       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
       { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-
     ],
   },
   truck: {
@@ -29,11 +26,7 @@ const fleetTabs = {
     items: [
       { img: truck1, title: 'Heavy-Duty Tipper Trucks' },
       { img: truck2, title: 'Flatbed Trucks for Industrial Use' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
+       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
       { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
     ],
   },
@@ -42,9 +35,7 @@ const fleetTabs = {
     items: [
       { img: tanker1, title: 'Fuel Tankers - Compliant and Safe' },
       { img: tanker2, title: 'Water Tankers for Construction' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
+       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
       { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
     ],
   },
@@ -53,9 +44,7 @@ const fleetTabs = {
     items: [
       { img: car1, title: 'Luxury Executive Sedans' },
       { img: car2, title: 'SUVs and AWDs for Versatile Travel' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
+       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
       { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
     ],
   },
@@ -63,6 +52,7 @@ const fleetTabs = {
 
 export default function Gallery() {
   const [activeTab, setActiveTab] = useState('bus');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <>
@@ -120,7 +110,9 @@ export default function Gallery() {
                     objectFit: 'cover',
                     borderTopLeftRadius: '10px',
                     borderTopRightRadius: '10px',
+                    cursor: 'pointer',
                   }}
+                  onClick={() => setSelectedImage(item)}
                 />
                 <div className="card-body">
                   <h5 className="card-title text-black fw-bold">{item.title}</h5>
@@ -130,6 +122,17 @@ export default function Gallery() {
           ))}
         </div>
       </section>
+
+      {/* Image Preview Modal */}
+      {selectedImage && (
+        <div className="preview-modal" onClick={() => setSelectedImage(null)}>
+          <div className="preview-content" onClick={(e) => e.stopPropagation()}>
+            <button className="btn-close btn-close-white" onClick={() => setSelectedImage(null)} />
+            <img src={selectedImage.img} alt={selectedImage.title} className="img-fluid" />
+            <p className="text-white mt-2">{selectedImage.title}</p>
+          </div>
+        </div>
+      )}
     </>
   );
 }

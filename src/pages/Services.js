@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
         }}
       >
         <div>
-          <h1 className="display-5 fw-bold">What we offer</h1>
+          <h1 className="display-5 fw-bold">Our Services</h1>
           <h2 className="lead">
             Focused on Providing Reliable and High-Quality Transport Solutions Tailored to Meet Every Customer’s Needs
           </h2>

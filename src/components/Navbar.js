@@ -75,7 +75,7 @@ export default function Navbar() {
                 {[
                   { path: '/', label: 'HOME' },
                   { path: '/why-choose-us', label: 'WHY CHOOSE US' },
-                  { path: '/services', label: 'WHAT WE OFFER' },
+                  { path: '/services', label: 'OUR SERVICES' },
                   { path: '/fleet', label: 'OUR FLEET' },
                   { path: '/gallery', label: 'GALLERY' },
                   { path: '/contact', label: 'CONTACT US' },

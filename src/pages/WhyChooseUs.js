@@ -40,32 +40,36 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Right Icon List */}
-            <div className="col-lg-6">
-              <ul className="list-unstyled">
-                {[
-                  { icon: 'bi-cash-coin', text: 'Competitive Pricing Without Sacrificing Quality' },
-                  { icon: 'bi-calendar-check-fill', text: 'Seamless Rental Choices for Both Short-Term and Long-Term Needs' },
-                  { icon: 'bi-person-badge-fill', text: 'Trained, Professional, and Courteous Drivers' },
-                  { icon: 'bi-check2-circle', text: 'Well-Maintained, Spotless, and Thoroughly Checked Vehicles' },
-                  { icon: 'bi-clock-history', text: '24/7 Emergency Roadside Support' },
-                ].map((item, index) => (
-                  <li key={index} className="d-flex align-items-center mb-4">
-                    <div
-                      className="d-flex justify-content-center align-items-center rounded-circle me-3 text-white"
-                      style={{
-                        width: '60px',
-                        height: '60px',
-                        backgroundColor: '#dc3545',
-                        fontSize: '1.5rem',
-                      }}
-                    >
-                      <i className={`bi ${item.icon}`}></i>
-                    </div>
-                    <span className="fs-5 fw-medium">{item.text}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+<div className="col-lg-6">
+  <ul className="list-unstyled">
+    {[
+      { icon: 'bi-cash-coin', text: 'Competitive Pricing Without Sacrificing Quality' },
+      { icon: 'bi-calendar-check-fill', text: 'Seamless Rental Choices for Both Short-Term and Long-Term Needs' },
+      { icon: 'bi-person-badge-fill', text: 'Trained, Professional, and Courteous Drivers' },
+      { icon: 'bi-check2-circle', text: 'Well-Maintained, Spotless, and Thoroughly Checked Vehicles' },
+      { icon: 'bi-clock-history', text: '24/7 Emergency Roadside Support' },
+    ].map((item, index) => (
+      <li
+        key={index}
+        className="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mb-4"
+      >
+        <div
+          className="d-flex justify-content-center align-items-center rounded-circle me-sm-3 mb-2 mb-sm-0 text-white flex-shrink-0"
+          style={{
+            width: '60px',
+            height: '60px',
+            backgroundColor: '#dc3545',
+            fontSize: '1.5rem',
+          }}
+        >
+          <i className={`bi ${item.icon}`}></i>
+        </div>
+        <span className="fs-6 fs-md-5 fw-medium">{item.text}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+
           </div>
         </div>
       </section>

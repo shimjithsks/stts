@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../assets/logo.png';
 
@@ -16,42 +17,41 @@ export default function Footer() {
             <p>
               Secret Trading And Transport Service has earned a reputation for excellence in Qatar’s transportation industry, built on respect, integrity, and efficiency.
             </p>
-           <div className="social-icons d-flex gap-3 mt-3">
-  <div
-    className="social-icon"
-    style={{ cursor: 'pointer' }}
-    onClick={() => window.open('https://www.facebook.com', '_blank')}
-  >
-    <i className="bi bi-facebook fs-4"></i>
-  </div>
-  <div
-    className="social-icon"
-    style={{ cursor: 'pointer' }}
-    onClick={() => window.open('https://www.instagram.com', '_blank')}
-  >
-    <i className="bi bi-instagram fs-4"></i>
-  </div>
-  <div
-    className="social-icon"
-    style={{ cursor: 'pointer' }}
-    onClick={() => window.open('https://twitter.com', '_blank')}
-  >
-    <i className="bi bi-twitter fs-4"></i>
-  </div>
-</div>
-
+            <div className="social-icons d-flex gap-3 mt-3">
+              <div
+                className="social-icon"
+                style={{ cursor: 'pointer' }}
+                onClick={() => window.open('https://www.facebook.com', '_blank')}
+              >
+                <i className="bi bi-facebook fs-4"></i>
+              </div>
+              <div
+                className="social-icon"
+                style={{ cursor: 'pointer' }}
+                onClick={() => window.open('https://www.instagram.com', '_blank')}
+              >
+                <i className="bi bi-instagram fs-4"></i>
+              </div>
+              <div
+                className="social-icon"
+                style={{ cursor: 'pointer' }}
+                onClick={() => window.open('https://twitter.com', '_blank')}
+              >
+                <i className="bi bi-twitter fs-4"></i>
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
           <div className="col-lg-4">
             <h5 className="fw-bold mb-3">Quick Links</h5>
             <ul className="list-unstyled footer-links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/why-choose-us">Why Choose Us</a></li>
-              <li><a href="/services">What We Offer</a></li>
-              <li><a href="/fleet">Our Fleet</a></li>
-              <li><a href="/gallery">Gallery</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/why-choose-us">Why Choose Us</Link></li>
+              <li><Link to="/services">What We Offer</Link></li>
+              <li><Link to="/fleet">Our Fleet</Link></li>
+              <li><Link to="/gallery">Gallery</Link></li>
+              <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -70,24 +70,23 @@ export default function Footer() {
                   Industrial Area, Street #36 (545), Doha Qatar
                 </a>
               </li>
-             <li className="mb-3 d-flex align-items-start">
-  <i className="bi bi-telephone-fill text-danger me-2 fs-5"></i>
-  <div className="d-flex flex-column">
-    <a
-      href="tel:+97430800072"
-      className="text-white text-decoration-none mb-1"
-    >
-      (+974) 3080 0072
-    </a>
-    <a
-      href="tel:+97477723298"
-      className="text-white text-decoration-none"
-    >
-      (+974) 7772 3298
-    </a>
-  </div>
-</li>
-
+              <li className="mb-3 d-flex align-items-start">
+                <i className="bi bi-telephone-fill text-danger me-2 fs-5"></i>
+                <div className="d-flex flex-column">
+                  <a
+                    href="tel:+97430800072"
+                    className="text-white text-decoration-none mb-1"
+                  >
+                    (+974) 3080 0072
+                  </a>
+                  <a
+                    href="tel:+97477723298"
+                    className="text-white text-decoration-none"
+                  >
+                    (+974) 7772 3298
+                  </a>
+                </div>
+              </li>
               <li className="d-flex align-items-start">
                 <i className="bi bi-envelope-fill text-danger me-2 fs-5"></i>
                 <a

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Services.css';
 import bannerBg from '../assets/move_3.jpg';
 import schoolBus from '../assets/move_1.jpg';
 import labourBus from '../assets/move_2.jpg';
@@ -96,7 +97,7 @@ STTS offers tailored shuttle solutions designed exclusively for your employees. 
      {/* Why Choose Us Section */}
 <section className="py-5 bg-light text-dark">
   <div className="container">
-    <h2 className="text-center fw-bold mb-5">WHY CHOOSE US</h2>
+    {/* <h2 className="text-center fw-bold mb-5">WHY CHOOSE US</h2> */}
     <div className="row g-4 text-center">
       {/* Safe & Reliable */}
       <div className="col-md-4">

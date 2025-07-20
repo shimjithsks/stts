@@ -264,8 +264,8 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
 
       <div className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
         <div className="vehicle-card bg-white p-4 h-100 shadow rounded text-center">
-          <img src={move3} alt="Tanker" className="vehicle-image mb-3" />
-          <h5 className="fw-bold mb-2">Tanker</h5>
+            <img src={move3} alt="Tanker" className="vehicle-image mb-3" />
+              <h5 className="fw-bold mb-2">Tanker</h5>
           <p className="text-muted">
             Safe and certified tankers for transporting fuel, water, and other industrial liquids.
           </p>

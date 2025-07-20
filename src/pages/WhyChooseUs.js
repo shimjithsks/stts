@@ -1,7 +1,7 @@
 import React from 'react';
 import bannerBg from '../assets/move_1.jpg';
 import carImage from '../assets/move_2.jpg';
-import visionBg from '../assets/move_3.jpg';
+import './WhyChooseUs.css';
 
 export default function WhyChooseUs() {
   return (
@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
           style={{
             width: '60px',
             height: '60px',
-            backgroundColor: '#dc3545',
+            backgroundColor: '#db2e2eff',
             fontSize: '1.5rem',
           }}
         >

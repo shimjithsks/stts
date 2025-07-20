@@ -1,0 +1,65 @@
+/* Nav Tabs */
+.nav-tabs .nav-link {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  border-color: #dc3545 #dc3545 #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Card Styling */
+.red-border-card {
+  border: 2px solid #cdcbcb !important;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.red-border-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Animation */
+.tab-content .card {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional Grid Layout */
+.gallery-images-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.fleet-thumbnail {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease-in-out;
+}
+
+.fleet-thumbnail:hover {
+  transform: scale(1.05);
+}

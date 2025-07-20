@@ -1,6 +1,11 @@
 /* ==================== */
 /* Hero Section          */
 /* ==================== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .hero {
   position: relative;
   height: 80vh;

@@ -1,0 +1,57 @@
+.speciality-section h2 {
+  color: #000;
+}
+
+.speciality-section p {
+  color: #555;
+}
+
+.speciality-section img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* Red Border Card Styling */
+.red-border-card {
+  border: 2px solid #dc3545 !important; /* Bootstrap red */
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.red-border-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.red-border-card h5,
+.card-title {
+  color: #000 !important;
+  margin-bottom: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .speciality-section img {
+    height: auto;
+  }
+
+  .speciality-section li {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .speciality-section li img {
+    margin-bottom: 10px;
+  }
+}
+.icon-bg {
+  width: 80px;
+  height: 80px;
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 50%;
+  object-fit: contain;
+}

@@ -1,0 +1,23 @@
+.speciality-section h2 {
+  color: #000;
+}
+
+.speciality-section p {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .speciality-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .speciality-section li {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .speciality-section li img {
+    margin-bottom: 10px;
+  }
+}

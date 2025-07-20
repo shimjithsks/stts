@@ -104,50 +104,107 @@
     transform: translateX(-100%);
   }
 }
+/* ============================== */
+/* Trusted Clients Section        */
+/* ============================== */
+.trusted-clients {
+  background-color: #ffffff;
+  padding: 3rem 0;
+  text-align: center;
+}
 
-/* Client logo styling */
-.trusted-clients .client-logo-wrapper {
-  width: 120px;
-  height: 120px;
-  background: #ffffff;
-  border: 3px solid #FF2B1C; /* Red border */
-  border-radius: 10%; /* ✅ Make the wrapper circular */
-  padding: 10px;
+.trusted-clients h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.trusted-clients p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+
+.clients-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.clients-carousel {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  gap: 2rem;
+  animation: scrollRightToLeft 25s linear infinite;
+  padding: 0.5rem 0;
 }
 
-
-.trusted-clients .client-logo-wrapper:hover {
-  transform: scale(1.05);
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.trusted-clients .client-logo {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.vehicle-wrapper {
+/* Updated logo wrapper for perfect circle */
+.client-logo-wrapper {
+  flex-shrink: 0;
   display: flex;
-  justify-content: center;
-  align-items: center; /* Optional: for vertical centering */
   flex-direction: column;
+  align-items: center;
+  width: 120px;
 }
 
-.vehicle-image {
-  height: 100px;
-  width: 100px;
+/* Circle image style */
+.client-logo {
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #FF2B1C;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Client name under the logo */
+.client-name {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .client-logo-wrapper {
+    width: 80px;
+  }
+
+  .client-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .client-name {
+    font-size: 0.75rem;
+  }
+}
+
+.vehicle-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FF2B1C;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .vehicle-image:hover {
   transform: scale(1.05);
 }
-

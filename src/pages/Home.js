@@ -71,7 +71,7 @@ export default function Home() {
             Unparalleled customer support
           </li>
         </ul>
-      <Link to="/about" className="btn btn-danger btn-lg mt-4">Read More</Link>
+      <Link to="/why-choose-us" className="btn btn-danger btn-lg mt-4">Read More</Link>
       </div>
 
       {/* Our Approach */}
@@ -357,16 +357,28 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
   <div className="container" data-aos="fade-up">
     <div className="text-center mb-5">
       <h2 className="fw-bold display-5 text-black">Our Valued Clients</h2>
-      <p className="lead text-muted">
-        We Promised. They Trusted. We Delivered.
-      </p>
+      <p className="lead text-muted">We Promised. They Trusted. We Delivered.</p>
     </div>
-    <div className="clients-carousel-wrapper">
-      <div className="clients-carousel d-flex flex-nowrap">
-        {[move1, move2, move3, move4, move1, move2, move3, move4].map((logo, index) => (
-          <div className="client-logo-wrapper mx-3" key={index}>
-            <img src={logo} alt={`Client ${index + 1}`} className="client-logo" />
-          </div>
+
+    <div className="clients-carousel-wrapper overflow-hidden">
+      <div className="clients-carousel d-flex flex-nowrap align-items-center">
+        {[
+          { logo: move1, name: "Client One" },
+          { logo: move2, name: "Client Two" },
+          { logo: move3, name: "Client Three" },
+          { logo: move4, name: "Client Four" },
+          { logo: move1, name: "Client Five" },
+          { logo: move2, name: "Client Six" },
+        ].map((client, index) => (
+       <div className="client-logo-wrapper text-center flex-shrink-0 px-3" key={index}>
+  <img
+    src={client.logo}
+    alt={client.name}
+    className="client-logo"
+  />
+  <div className="client-name">{client.name}</div>
+</div>
+
         ))}
       </div>
     </div>

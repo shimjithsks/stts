@@ -1,26 +1,33 @@
 {
   "files": {
-    "main.css": "/stts/static/css/main.cd6b7db1.css",
-    "main.js": "/stts/static/js/main.738e5eed.js",
-    "static/media/truck.jpg": "/stts/static/media/truck.849bb75b3f3b2d489938.jpg",
-    "static/media/pick_drop.png": "/stts/static/media/pick_drop.f7a8aa2b2e814e590b41.png",
-    "static/media/star_hotel.png": "/stts/static/media/star_hotel.fd8ae0cd72310711010c.png",
-    "static/media/labour.png": "/stts/static/media/labour.927e9d19040fab99c827.png",
-    "static/media/staff.png": "/stts/static/media/staff.958d32a04582ef095d56.png",
-    "static/media/move_2.jpg": "/stts/static/media/move_2.2873b6d92dfafec6bf23.jpg",
-    "static/media/move_1.jpg": "/stts/static/media/move_1.ba21cf690ad4ab676754.jpg",
+    "main.css": "/stts/static/css/main.ad12dd75.css",
+    "main.js": "/stts/static/js/main.17e3bd54.js",
+    "static/media/truck.jpg": "/stts/static/media/truck.19126237a9b70c54cee4.jpg",
+    "static/media/star_hotel.jpg": "/stts/static/media/star_hotel.e0f3c4103fc3a0ea590b.jpg",
+    "static/media/pick_drop.jpg": "/stts/static/media/pick_drop.ee3eddd1aac390ef6bfe.jpg",
+    "static/media/luxury_cars.jpg": "/stts/static/media/luxury_cars.7f310406e2315b1a2a83.jpg",
+    "static/media/school.jpg": "/stts/static/media/school.2fb86715eb6816e8221c.jpg",
+    "static/media/60_50_seat_bus.jpg": "/stts/static/media/60_50_seat_bus.46082fe764b5f54040dd.jpg",
+    "static/media/labour.jpg": "/stts/static/media/labour.d9fa9b836a8aac424431.jpg",
     "static/media/bootstrap-icons.woff?": "/stts/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/trailor.jpg": "/stts/static/media/trailor.c4237a3cafbe8a1c90e2.jpg",
     "static/media/bootstrap-icons.woff2?": "/stts/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
-    "static/media/school.png": "/stts/static/media/school.798c41e43f87eaa9b2f4.png",
-    "static/media/move_4.jpg": "/stts/static/media/move_4.dfa886454390c10b650f.jpg",
-    "static/media/move_3.jpg": "/stts/static/media/move_3.8120ab35cac9b86c24dd.jpg",
+    "static/media/urvan.jpg": "/stts/static/media/urvan.2914c844d21ea8251667.jpg",
+    "static/media/move_2.jpg": "/stts/static/media/move_2.cc29df9c33327ddcafec.jpg",
+    "static/media/move_1.jpg": "/stts/static/media/move_1.f64963e79256da62d41b.jpg",
+    "static/media/hilux.jpg": "/stts/static/media/hilux.39679eaa9c22924d2364.jpg",
+    "static/media/toyota_coaster.jpg": "/stts/static/media/toyota_coaster.c0124cd9f7b6add3e1bb.jpg",
+    "static/media/move_4.jpg": "/stts/static/media/move_4.2aa17b7e15806ad1c6c0.jpg",
+    "static/media/staff.jpg": "/stts/static/media/staff.026a7353b4c0abae240a.jpg",
+    "static/media/move_3.jpg": "/stts/static/media/move_3.1e24e0e0a36f89b27396.jpg",
     "static/media/logo.png": "/stts/static/media/logo.ca1eac1cd3aaaa95d8a2.png",
+    "static/media/water.jpg": "/stts/static/media/water.cb75b7646380d8fd933f.jpg",
     "index.html": "/stts/index.html",
-    "main.cd6b7db1.css.map": "/stts/static/css/main.cd6b7db1.css.map",
-    "main.738e5eed.js.map": "/stts/static/js/main.738e5eed.js.map"
+    "main.ad12dd75.css.map": "/stts/static/css/main.ad12dd75.css.map",
+    "main.17e3bd54.js.map": "/stts/static/js/main.17e3bd54.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd6b7db1.css",
-    "static/js/main.738e5eed.js"
+    "static/css/main.ad12dd75.css",
+    "static/js/main.17e3bd54.js"
   ]
 }

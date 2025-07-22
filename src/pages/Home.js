@@ -12,11 +12,12 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   const images = [move1, move2, move3];
   const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
+  
+useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // change image every 5 seconds
+      setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+
 
     return () => clearInterval(interval);
   }, []);

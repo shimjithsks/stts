@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Contact.css';
 import bannerBg from '../assets/move_1.jpg';
-import logo from '../assets/logo.png';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 

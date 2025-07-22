@@ -16,8 +16,16 @@ export default function Navbar() {
       {/* Floating Contact Bar */}
       <div
         className="floating-contact-bar"
-        onMouseEnter={() => document.querySelector(".floating-contact-bar").classList.add("expanded")}
-        onMouseLeave={() => document.querySelector(".floating-contact-bar").classList.remove("expanded")}
+        onMouseEnter={() =>
+          document
+            .querySelector('.floating-contact-bar')
+            .classList.add('expanded')
+        }
+        onMouseLeave={() =>
+          document
+            .querySelector('.floating-contact-bar')
+            .classList.remove('expanded')
+        }
       >
         <div className="toggle-btn">
           <i className="bi bi-arrow-left text-white"></i>
@@ -38,11 +46,34 @@ export default function Navbar() {
       {/* Top Bar */}
       <div className="top-bar text-white py-2">
         <div className="container d-flex justify-content-between align-items-center flex-wrap">
-          <span className="welcome-text">Welcome To Secret Trading And Transport Service</span>
+          <span className="welcome-text">
+            Welcome To Secret Trading And Transport Service
+          </span>
           <div className="social-icons d-flex align-items-center gap-3">
-            <a onClick={() => window.open('https://www.facebook.com', '_blank')} className="social-icon"><i className="bi bi-facebook"></i></a>
-            <a onClick={() => window.open('https://www.instagram.com', '_blank')} className="social-icon"><i className="bi bi-instagram"></i></a>
-            <a onClick={() => window.open('https://www.twitter.com', '_blank')} className="social-icon"><i className="bi bi-twitter"></i></a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <i className="bi bi-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <i className="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
+              <i className="bi bi-twitter"></i>
+            </a>
             <a
               href={`${process.env.PUBLIC_URL}/files/secret_profile.pdf`}
               className="download-profile-icon"
@@ -75,6 +106,9 @@ export default function Navbar() {
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -90,7 +124,11 @@ export default function Navbar() {
                   { path: '/contact', label: 'CONTACT US' },
                 ].map((item, idx) => (
                   <li className="nav-item" key={idx}>
-                    <NavLink className="nav-link menu-link" to={item.path} onClick={handleNavLinkClick}>
+                    <NavLink
+                      className="nav-link menu-link"
+                      to={item.path}
+                      onClick={handleNavLinkClick}
+                    >
                       {item.label}
                     </NavLink>
                   </li>

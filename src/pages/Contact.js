@@ -5,46 +5,54 @@ import logo from '../assets/logo.png';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 
-const RECAPTCHA_SITE_KEY = '6LcS04ArAAAAABEu940ahT70SnXqA3XWLfPWyPPD';
+const RECAPTCHA_SITE_KEY = '6LeI_4srAAAAAPpfWqat1OZ3RgHdGszX09u13Gd6';
 
 export default function Contact() {
   const [captchaValue, setCaptchaValue] = useState(null);
+  const captchaRef = useRef(null);
   const formRef = useRef();
 
   const handleCaptchaChange = (value) => {
     setCaptchaValue(value);
   };
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  const form = formRef.current;
-
-  // First email to admin
-  emailjs.sendForm(
-    'service_by699al',
-    'template_7lvn30t',
-    form,
-    'WmS9GgLgEyRNePAdt'
-  );
-
-  // Second email: auto-reply to user
-  emailjs.sendForm(
-    'service_by699al',
-    'template_yfm0oow',
-    form,
-    'WmS9GgLgEyRNePAdt'
-  ).then(
-    () => {
-      alert('Successful Submitted.');
-      form.reset();
-    },
-    (error) => {
-      alert('Failed to send confirmation. Please try again.');
-      console.error(error);
+    if (!captchaValue) {
+      alert('Please verify that you are not a robot.');
+      return;
     }
-  );
-};
+
+    const form = formRef.current;
+
+    // First email to admin
+    emailjs.sendForm(
+      'service_by699al',
+      'template_7lvn30t',
+      form,
+      'WmS9GgLgEyRNePAdt'
+    );
+
+    // Second email: auto-reply to user
+    emailjs.sendForm(
+      'service_by699al',
+      'template_yfm0oow',
+      form,
+      'WmS9GgLgEyRNePAdt'
+    ).then(
+      () => {
+        alert('Successfully submitted.');
+        form.reset();
+        setCaptchaValue(null);
+        captchaRef.current.reset(); // Reset CAPTCHA widget
+      },
+      (error) => {
+        alert('Failed to send confirmation. Please try again.');
+        console.error(error);
+      }
+    );
+  };
 
   return (
     <>
@@ -118,9 +126,13 @@ const handleSubmit = (e) => {
                   </div>
                 </div>
 
-                {/* CAPTCHA - kept for future use */}
+                {/* CAPTCHA */}
                 <div className="my-4 text-center">
-                  <ReCAPTCHA sitekey={RECAPTCHA_SITE_KEY} onChange={handleCaptchaChange} />
+                  <ReCAPTCHA
+                    ref={captchaRef}
+                    sitekey={RECAPTCHA_SITE_KEY}
+                    onChange={handleCaptchaChange}
+                  />
                 </div>
 
                 <div className="text-center mt-4">

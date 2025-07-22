@@ -1,20 +1,26 @@
 {
   "files": {
     "main.css": "/stts/static/css/main.cd6b7db1.css",
-    "main.js": "/stts/static/js/main.f81baeb5.js",
+    "main.js": "/stts/static/js/main.738e5eed.js",
+    "static/media/truck.jpg": "/stts/static/media/truck.849bb75b3f3b2d489938.jpg",
+    "static/media/pick_drop.png": "/stts/static/media/pick_drop.f7a8aa2b2e814e590b41.png",
+    "static/media/star_hotel.png": "/stts/static/media/star_hotel.fd8ae0cd72310711010c.png",
+    "static/media/labour.png": "/stts/static/media/labour.927e9d19040fab99c827.png",
+    "static/media/staff.png": "/stts/static/media/staff.958d32a04582ef095d56.png",
     "static/media/move_2.jpg": "/stts/static/media/move_2.2873b6d92dfafec6bf23.jpg",
     "static/media/move_1.jpg": "/stts/static/media/move_1.ba21cf690ad4ab676754.jpg",
     "static/media/bootstrap-icons.woff?": "/stts/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/stts/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/school.png": "/stts/static/media/school.798c41e43f87eaa9b2f4.png",
     "static/media/move_4.jpg": "/stts/static/media/move_4.dfa886454390c10b650f.jpg",
     "static/media/move_3.jpg": "/stts/static/media/move_3.8120ab35cac9b86c24dd.jpg",
     "static/media/logo.png": "/stts/static/media/logo.ca1eac1cd3aaaa95d8a2.png",
     "index.html": "/stts/index.html",
     "main.cd6b7db1.css.map": "/stts/static/css/main.cd6b7db1.css.map",
-    "main.f81baeb5.js.map": "/stts/static/js/main.f81baeb5.js.map"
+    "main.738e5eed.js.map": "/stts/static/js/main.738e5eed.js.map"
   },
   "entrypoints": [
     "static/css/main.cd6b7db1.css",
-    "static/js/main.f81baeb5.js"
+    "static/js/main.738e5eed.js"
   ]
 }

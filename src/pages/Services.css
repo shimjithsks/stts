@@ -15,7 +15,7 @@
 
 /* Red Border Card Styling */
 .red-border-card {
-  border: 2px solid #dc3545 !important; /* Bootstrap red */
+  border: 2px solid #dc3545 !important;
   border-radius: 10px;
   background-color: #fff;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -30,6 +30,30 @@
 .card-title {
   color: #000 !important;
   margin-bottom: 0;
+}
+
+/* Overlay Hover Button */
+.service-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-image-container:hover .overlay {
+  opacity: 1;
 }
 
 /* Responsive styles */
@@ -47,6 +71,7 @@
     margin-bottom: 10px;
   }
 }
+
 .icon-bg {
   width: 80px;
   height: 80px;

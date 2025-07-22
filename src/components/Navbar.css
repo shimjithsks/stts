@@ -263,3 +263,60 @@ body {
   display: inline-block;
 }
 
+/* ==================== */
+/* Floating Contact Bar */
+/* ==================== */
+.floating-contact-bar {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: #000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 45px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.floating-contact-bar.expanded {
+  width: 60px;
+}
+
+.floating-contact-bar .toggle-btn {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.contact-icon.whatsapp {
+  background-color: #25D366;
+}
+
+.contact-icon.phone {
+  background-color: #128C7E;
+}
+
+.contact-icon:hover {
+  opacity: 0.8;
+}

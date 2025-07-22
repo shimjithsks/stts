@@ -1,11 +1,11 @@
 import React from 'react';
 import './Services.css';
 import bannerBg from '../assets/move_3.jpg';
-import schoolBus from '../assets/school.png';
-import labourBus from '../assets/labour.png';
-import pickupDrop from '../assets/pick_drop.png';
-import hotelService from '../assets/star_hotel.png';
-import staffTransport from '../assets/staff.png';
+import schoolBus from '../assets/school.jpg';
+import labourBus from '../assets/labour.jpg';
+import pickupDrop from '../assets/pick_drop.jpg';
+import hotelService from '../assets/star_hotel.jpg';
+import staffTransport from '../assets/staff.jpg';
 import carRental from '../assets/move_3.jpg';
 import { Link } from 'react-router-dom'; 
 
@@ -42,27 +42,31 @@ export default function WhyChooseUs() {
 
         <div className="row g-4">
           {[
-              { img: staffTransport, title: 'STAFF TRANSPORTATION' },
-            { img: labourBus, title: 'LABOUR TRANSPORTATION' },
-            { img: pickupDrop, title: 'PICKUP AND DROP SERVICES' },
-            { img: hotelService, title: 'STAR HOTEL SERVICES' },
-            { img: carRental, title: 'CAR RENTALS' },
-            { img: schoolBus, title: 'SCHOOL TRANSPORTATION' },
-
+            { img: staffTransport, title: 'Staff Transportation' },
+            { img: labourBus, title: 'Labour Transportation' },
+            { img: pickupDrop, title: 'Pickup and Drop Services' },
+            { img: hotelService, title: 'Star Hotel Services' },
+            { img: carRental, title: 'Car Rentals' },
+            { img: schoolBus, title: 'School Transportation' },
           ].map((item, index) => (
             <div className="col-sm-6 col-lg-4" key={index}>
               <div className="card h-100 border-0 shadow-sm red-border-card text-center">
-                <img
-                  src={item.img}
-                  className="card-img-top"
-                  alt={item.title}
-                  style={{
-                    height: 200,
-                    objectFit: 'cover',
-                    borderTopLeftRadius: '10px',
-                    borderTopRightRadius: '10px',
-                  }}
-                />
+                <div className="position-relative service-image-container">
+                  <img
+                    src={item.img}
+                    className="card-img-top"
+                    alt={item.title}
+                    style={{
+                      height: 200,
+                      objectFit: 'cover',
+                      borderTopLeftRadius: '10px',
+                      borderTopRightRadius: '10px',
+                    }}
+                  />
+                  <div className="overlay d-flex align-items-center justify-content-center">
+                    <Link to="/contact" className="btn btn-danger">Get Quote</Link>
+                  </div>
+                </div>
                 <div className="card-body">
                   <h5 className="card-title text-black fw-bold">{item.title}</h5>
                 </div>
@@ -72,107 +76,69 @@ export default function WhyChooseUs() {
         </div>
       </section>
 
+      {/* Contact Us Prompt Section */}
+      <section
+        className="contact-prompt-section position-relative text-white text-center py-5"
+        style={{
+          background: `linear-gradient(rgba(168, 110, 0, 0.7), rgba(0, 0, 0, 0.6)), url(${schoolBus}) center center/cover no-repeat`,
+        }}
+      >
+        <div className="container" data-aos="fade-up">
+          <h2 className="fw-bold display-5 mb-4">Customised Transport Solutions</h2>
+          <p className="lead mx-auto mb-4" style={{ maxWidth: '800px' }}>
+            STTS offers tailored shuttle solutions designed exclusively for your employees. No matter what your transportation needs are, STTS provides reliable fixed-route services to ensure your team reaches their destinations on time, every time. Flexible pricing options are available on a daily, weekly, monthly, or annual contract basis.
+          </p>
+          <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+            <Link to="/contact" className="btn btn-danger btn-lg mt-4">Get a Quote</Link>
+          </div>
+        </div>
+      </section>
 
-{/* Contact Us Prompt Section - Vision Style */}
-<section
-  className="contact-prompt-section position-relative text-white text-center py-5"
-  style={{
-    background: `linear-gradient(rgba(168, 110, 0, 0.7), rgba(0, 0, 0, 0.6)), url(${schoolBus}) center center/cover no-repeat`,
-  }}
->
-  <div className="container" data-aos="fade-up">
-      <h2 className="fw-bold display-5 mb-4">Customised Transport Solutions</h2>
-    <p className="lead mx-auto mb-4" style={{ maxWidth: '800px' }}>
-STTS offers tailored shuttle solutions designed exclusively for your employees. No matter what your transportation needs are, STTS provides reliable fixed-route services to ensure your team reaches their destinations on time, every time. Flexible pricing options are available on a daily, weekly, monthly, or annual contract basis.</p>
-    <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+      {/* Why Choose Us Section */}
+      <section className="py-5 bg-light text-dark">
+        <div className="container">
+          <div className="row g-4 text-center">
+            {/* Safe & Reliable */}
+            <div className="col-md-4">
+              <div className="p-4 bg-white rounded shadow-sm h-100">
+                <div className="mb-3">
+                  <div className="rounded-circle d-inline-flex justify-content-center align-items-center" style={{ width: '80px', height: '80px', backgroundColor: '#dc3545' }}>
+                    <i className="bi bi-shield-check text-white fs-2"></i>
+                  </div>
+                </div>
+                <h5 className="fw-bold text-dark">SAFE & RELIABLE</h5>
+                <p className="text-muted">We pride ourselves on providing a safe and punctual transportation service to our clients; where we can adapt our services to fit our clients' needs.</p>
+              </div>
+            </div>
 
-      <Link to="/contact" className="btn btn-danger btn-lg mt-4">Get a Quote</Link>
+            {/* Great Value */}
+            <div className="col-md-4">
+              <div className="p-4 bg-white rounded shadow-sm h-100">
+                <div className="mb-3">
+                  <div className="rounded-circle d-inline-flex justify-content-center align-items-center" style={{ width: '80px', height: '80px', backgroundColor: '#dc3545' }}>
+                    <i className="bi bi-currency-dollar text-white fs-2"></i>
+                  </div>
+                </div>
+                <h5 className="fw-bold text-dark">GREAT VALUE</h5>
+                <p className="text-muted">The service is inclusive of fuel, driver and vehicle with comprehensive insurance even for our passengers to ensure peace of mind.</p>
+              </div>
+            </div>
 
-</div>
-
-    <div className="mt-5">
-    </div>
-  </div>
-</section>
-
-     {/* Why Choose Us Section */}
-<section className="py-5 bg-light text-dark">
-  <div className="container">
-    {/* <h2 className="text-center fw-bold mb-5">WHY CHOOSE US</h2> */}
-    <div className="row g-4 text-center">
-      {/* Safe & Reliable */}
-      <div className="col-md-4">
-        <div className="p-4 bg-white rounded shadow-sm h-100">
-          <div className="mb-3">
-            <div
-              className="rounded-circle d-inline-flex justify-content-center align-items-center"
-              style={{
-                width: '80px',
-                height: '80px',
-                backgroundColor: '#dc3545',
-              }}
-            >
-              <i className="bi bi-shield-check text-white fs-2"></i>
+            {/* Quality Assurance */}
+            <div className="col-md-4">
+              <div className="p-4 bg-white rounded shadow-sm h-100">
+                <div className="mb-3">
+                  <div className="rounded-circle d-inline-flex justify-content-center align-items-center" style={{ width: '80px', height: '80px', backgroundColor: '#dc3545' }}>
+                    <i className="bi bi-clipboard-check text-white fs-2"></i>
+                  </div>
+                </div>
+                <h5 className="fw-bold text-dark">QUALITY ASSURANCE</h5>
+                <p className="text-muted">Our buses are equipped with GPS tracking to provide continuous monitoring of our buses and drivers — reassuring our clients that our service is tracked for location, time and performance.</p>
+              </div>
             </div>
           </div>
-          <h5 className="fw-bold text-dark">SAFE & RELIABLE</h5>
-          <p className="text-muted">
-            We pride ourselves on providing a safe and punctual transportation service to our clients;
-            where we can adapt our services to fit our clients' needs.
-          </p>
         </div>
-      </div>
-
-      {/* Great Value */}
-      <div className="col-md-4">
-        <div className="p-4 bg-white rounded shadow-sm h-100">
-          <div className="mb-3">
-            <div
-              className="rounded-circle d-inline-flex justify-content-center align-items-center"
-              style={{
-                width: '80px',
-                height: '80px',
-                backgroundColor: '#dc3545',
-              }}
-            >
-              <i className="bi bi-currency-dollar text-white fs-2"></i>
-            </div>
-          </div>
-          <h5 className="fw-bold text-dark">GREAT VALUE</h5>
-          <p className="text-muted">
-            The service is inclusive of fuel, driver and vehicle with comprehensive insurance even
-            for our passengers to ensure peace of mind.
-          </p>
-        </div>
-      </div>
-      
-
-      {/* Quality Assurance */}
-      <div className="col-md-4">
-        <div className="p-4 bg-white rounded shadow-sm h-100">
-          <div className="mb-3">
-            <div
-              className="rounded-circle d-inline-flex justify-content-center align-items-center"
-              style={{
-                width: '80px',
-                height: '80px',
-                backgroundColor: '#dc3545',
-              }}
-            >
-              <i className="bi bi-clipboard-check text-white fs-2"></i>
-            </div>
-          </div>
-          <h5 className="fw-bold text-dark">QUALITY ASSURANCE</h5>
-          <p className="text-muted">
-            Our buses are equipped with GPS tracking to provide continuous monitoring of our buses and drivers — 
-            reassuring our clients that our service is tracked for location, time and performance.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
     </>
   );
 }

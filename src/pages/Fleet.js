@@ -1,29 +1,27 @@
 import React from 'react';
 import bannerBg from '../assets/move_3.jpg';
-import schoolBus from '../assets/move_1.jpg';
-import labourBus from '../assets/move_2.jpg';
-import pickupDrop from '../assets/move_3.jpg';
-import hotelService from '../assets/move_4.jpg';
-import staffTransport from '../assets/move_2.jpg';
-import carRental from '../assets/move_3.jpg';
+import URVAN from '../assets/urvan.jpg';
+import ToyotaCoaster from '../assets/toyota_coaster.jpg';
+import Bus from '../assets/60_50_seat_bus.jpg';
+import Hilux from '../assets/hilux.jpg';
+import Trailor from '../assets/trailor.jpg';
+import luxury from '../assets/luxury_cars.jpg';
+import WaterTank from '../assets/water.jpg';
+import DieselTank from '../assets/move_4.jpg';
 import { Link } from 'react-router-dom';
 import './Fleet.css';
 
 export default function Fleet() {
   const fleetItems = [
-    { img: schoolBus, title: '66 SEATER LEYLAND / EICHER BUSES' },
-    { img: labourBus, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-    { img: pickupDrop, title: '12 SEATER TOYOTA HIACE / NISSAN URVAN' },
-    { img: hotelService, title: 'TOYOTA HILUX AND 3 TON PICK UPS' },
-    { img: staffTransport, title: 'SALOON AND LUXURY CARS' },
-    { img: carRental, title: 'AWDS AND SUVS' },
-    { img: pickupDrop, title: '12 SEATER TOYOTA HIACE / NISSAN URVAN' },
-    { img: hotelService, title: 'TOYOTA HILUX AND 3 TON PICK UPS' },
-    { img: staffTransport, title: 'SALOON AND LUXURY CARS' },
-    { img: carRental, title: 'AWDS AND SUVS' },
-    { img: staffTransport, title: 'SALOON AND LUXURY CARS' },
-    { img: carRental, title: 'AWDS AND SUVS' },
-  ];
+  { img: URVAN, title: '12 Seater Urvan' },
+  { img: ToyotaCoaster, title: '22 and 30 Seater Toyota Coasters' },
+  { img: Bus, title: '26, 30, 50 & 65 Seater Buses' },
+  { img: Hilux, title: 'Toyota Hilux and 3 Ton Pick Ups' },
+  { img: luxury, title: 'Saloon and Luxury Cars' },
+  { img: DieselTank, title: 'Fuel Tankers (Petrol & Diesel)' },
+  { img: WaterTank, title: 'Water Tankers' },
+  { img: Trailor, title: 'Chemical and Sewage Tankers' },
+];
 
   return (
     <>

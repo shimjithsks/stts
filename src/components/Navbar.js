@@ -13,17 +13,26 @@ export default function Navbar() {
 
   return (
     <>
-      {/* WhatsApp Floating Icon */}
+      {/* Floating Contact Bar */}
       <div
-        className="whatsapp-float"
-        onClick={() =>
-          window.open(
-            'https://wa.me/97430800072?text=Hi%20SecretTTS%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.',
-            '_blank'
-          )
-        }
+        className="floating-contact-bar"
+        onMouseEnter={() => document.querySelector(".floating-contact-bar").classList.add("expanded")}
+        onMouseLeave={() => document.querySelector(".floating-contact-bar").classList.remove("expanded")}
       >
-        <i className="bi bi-whatsapp fs-4"></i>
+        <div className="toggle-btn">
+          <i className="bi bi-arrow-left text-white"></i>
+        </div>
+        <a
+          href="https://wa.me/97430800072?text=Hi%20SecretTTS%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+          className="contact-icon whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bi bi-whatsapp"></i>
+        </a>
+        <a href="tel:+97430800072" className="contact-icon phone">
+          <i className="bi bi-telephone"></i>
+        </a>
       </div>
 
       {/* Top Bar */}
@@ -34,13 +43,13 @@ export default function Navbar() {
             <a onClick={() => window.open('https://www.facebook.com', '_blank')} className="social-icon"><i className="bi bi-facebook"></i></a>
             <a onClick={() => window.open('https://www.instagram.com', '_blank')} className="social-icon"><i className="bi bi-instagram"></i></a>
             <a onClick={() => window.open('https://www.twitter.com', '_blank')} className="social-icon"><i className="bi bi-twitter"></i></a>
-           <a
-  href={`${process.env.PUBLIC_URL}/files/secret_profile.pdf`}
-  className="download-profile-icon"
-  download
->
-  DOWNLOAD PROFILE
-</a>
+            <a
+              href={`${process.env.PUBLIC_URL}/files/secret_profile.pdf`}
+              className="download-profile-icon"
+              download
+            >
+              DOWNLOAD PROFILE
+            </a>
           </div>
         </div>
       </div>
@@ -50,14 +59,14 @@ export default function Navbar() {
         <div className="container d-flex justify-content-between align-items-center flex-wrap">
           <div className="logo d-flex align-items-center">
             <img src={logo} alt="SecretTTS" height="60" />
-           <h2 className="m-0 fw-bold text-white ms-2 position-relative logo-with-icon">
-  Secret
-  <span className="tt-highlight position-relative">
-    TT
-    <i className="bi bi-gem diamond-icon"></i>
-  </span>
-  Service
-</h2>
+            <h2 className="m-0 fw-bold text-white ms-2 position-relative logo-with-icon">
+              Secret
+              <span className="tt-highlight position-relative">
+                TT
+                <i className="bi bi-gem diamond-icon"></i>
+              </span>
+              Service
+            </h2>
           </div>
 
           <nav className="navbar navbar-expand-lg">

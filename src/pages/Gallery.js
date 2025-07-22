@@ -2,50 +2,54 @@ import React, { useState } from 'react';
 import './Gallery.css';
 import bannerBg from '../assets/move_3.jpg';
 
-import bus1 from '../assets/move_1.jpg';
-import bus2 from '../assets/move_2.jpg';
-import truck1 from '../assets/move_3.jpg';
-import truck2 from '../assets/move_4.jpg';
-import car1 from '../assets/move_1.jpg';
-import car2 from '../assets/move_2.jpg';
-import tanker1 from '../assets/move_3.jpg';
-import tanker2 from '../assets/move_4.jpg';
+import bus1 from '../assets/60_50_seat_bus.jpg';
+import bus2 from '../assets/move_1.jpg';
+import bus3 from '../assets/labour.jpg';
+import bus4 from '../assets/school.jpg';
+import truck1 from '../assets/truck.jpg';
+import truck2 from '../assets/trailor.jpg';
+import car1 from '../assets/hilux.jpg';
+import car2 from '../assets/pick_drop.jpg';
+import car3 from '../assets/staff.jpg';
+import car4 from '../assets/toyota_coaster.jpg';
+import car5 from '../assets/urvan.jpg';
+import car6 from '../assets/luxury_cars.jpg';
+import tanker1 from '../assets/move_4.jpg';
+import tanker2 from '../assets/water.jpg';
 
 const fleetTabs = {
   bus: {
     title: 'Buses',
     items: [
-      { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
+      { img: bus1, title: '50 Seater Bus' },
+      { img: bus2, title: '60 Seater Bus' },
+      { img: bus3, title: 'Labour Bus' },
+      { img: bus4, title: 'School Bus' },
     ],
   },
   truck: {
     title: 'Trucks',
     items: [
-      { img: truck1, title: 'Heavy-Duty Tipper Trucks' },
+      { img: truck1, title: 'Heavy-Duty Trucks' },
       { img: truck2, title: 'Flatbed Trucks for Industrial Use' },
-       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
-    ],
+  ],
   },
   tanker: {
     title: 'Tankers',
     items: [
       { img: tanker1, title: 'Fuel Tankers - Compliant and Safe' },
       { img: tanker2, title: 'Water Tankers for Construction' },
-       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
     ],
   },
   car: {
     title: 'Cars',
     items: [
-      { img: car1, title: 'Luxury Executive Sedans' },
-      { img: car2, title: 'SUVs and AWDs for Versatile Travel' },
-       { img: bus1, title: '66 SEATER LEYLAND / EICHER BUSES' },
-      { img: bus2, title: '22 AND 30 SEATER TOYOTA COASTERS' },
+      { img: car1, title: 'Toyota Hilux and 3 Ton Pick Ups' },
+      { img: car2, title: 'Pickup and Drop Services' },
+      { img: car3, title: 'Labour Transportation' },
+      { img: car4, title: '22 and 30 Seater Toyota Coasters' },
+      { img: car5, title: '12 Seater Urvan' },
+      { img: car6, title: 'Saloon and Luxury Cars' },
     ],
   },
 };

@@ -4,11 +4,13 @@ import move1 from '../assets/move_1.jpg';
 import move2 from '../assets/move_2.jpg';
 import move3 from '../assets/move_3.jpg';
 import move4 from '../assets/move_4.jpg';
+import truck from '../assets/truck.jpg';
+
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom'; 
 
 export default function Home() {
-  const images = [move1, move2, move3, move4];
+  const images = [move1, move2, move3];
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -254,7 +256,7 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
 
       <div className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
         <div className="vehicle-card bg-white p-4 h-100 shadow rounded text-center">
-          <img src={move2} alt="Truck" className="vehicle-image mb-3" />
+          <img src={truck} alt="Truck" className="vehicle-image mb-3" />
           <h5 className="fw-bold mb-2">Truck</h5>
           <p className="text-muted">
             Heavy-duty trucks for logistics, supply chain, and construction needs across the region.
@@ -264,7 +266,7 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
 
       <div className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
         <div className="vehicle-card bg-white p-4 h-100 shadow rounded text-center">
-            <img src={move3} alt="Tanker" className="vehicle-image mb-3" />
+            <img src={move4} alt="Tanker" className="vehicle-image mb-3" />
               <h5 className="fw-bold mb-2">Tanker</h5>
           <p className="text-muted">
             Safe and certified tankers for transporting fuel, water, and other industrial liquids.
@@ -274,7 +276,7 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
 
       <div className="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
         <div className="vehicle-card bg-white p-4 h-100 shadow rounded text-center">
-          <img src={move4} alt="Cars" className="vehicle-image mb-3" />
+          <img src={move3} alt="Cars" className="vehicle-image mb-3" />
           <h5 className="fw-bold mb-2">Cars</h5>
           <p className="text-muted">
             Well-maintained executive and economy cars tailored for VIP transport and daily rentals.
@@ -306,7 +308,7 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
         <div className="text-center">
           <i className="bi bi-clock-history display-4 mb-3 text-white"></i>
           <h3 className="fw-bold text-white">
-            <CountUp end={22} duration={3} />
+            <CountUp end={10} duration={3} />
           </h3>
           <p className="text-white">Years</p>
         </div>
@@ -324,7 +326,7 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
         <div className="text-center">
           <i className="bi bi-person-fill display-4 mb-3 text-white"></i>
           <h3 className="fw-bold text-white">
-            <CountUp end={4000} duration={3} separator="," suffix="+" />
+            <CountUp end={100} duration={3} separator="," suffix="+" />
           </h3>
           <p className="text-white">Staff</p>
         </div>
@@ -333,7 +335,7 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
         <div className="text-center">
           <i className="bi bi-truck-front display-4 mb-3 text-white"></i>
           <h3 className="fw-bold text-white">
-            <CountUp end={700} duration={3} suffix="+" />
+            <CountUp end={100} duration={3} suffix="+" />
           </h3>
           <p className="text-white">Fleet</p>
         </div>
@@ -342,7 +344,7 @@ Our dedicated team is here to assist you — with reliable, efficient service ac
         <div className="text-center">
           <i className="bi bi-people display-4 mb-3 text-white"></i>
           <h3 className="fw-bold text-white">
-            <CountUp end={5000} duration={3} separator="," suffix="+" />
+            <CountUp end={20} duration={3} separator="," suffix="+" />
           </h3>
           <p className="text-white">Clients</p>
         </div>

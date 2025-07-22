@@ -1,11 +1,11 @@
 import React from 'react';
 import './Services.css';
 import bannerBg from '../assets/move_3.jpg';
-import schoolBus from '../assets/move_1.jpg';
-import labourBus from '../assets/move_2.jpg';
-import pickupDrop from '../assets/move_3.jpg';
-import hotelService from '../assets/move_4.jpg';
-import staffTransport from '../assets/move_2.jpg';
+import schoolBus from '../assets/school.png';
+import labourBus from '../assets/labour.png';
+import pickupDrop from '../assets/pick_drop.png';
+import hotelService from '../assets/star_hotel.png';
+import staffTransport from '../assets/staff.png';
 import carRental from '../assets/move_3.jpg';
 import { Link } from 'react-router-dom'; 
 
@@ -42,12 +42,13 @@ export default function WhyChooseUs() {
 
         <div className="row g-4">
           {[
-            { img: schoolBus, title: 'SCHOOL TRANSPORTATION' },
+              { img: staffTransport, title: 'STAFF TRANSPORTATION' },
             { img: labourBus, title: 'LABOUR TRANSPORTATION' },
             { img: pickupDrop, title: 'PICKUP AND DROP SERVICES' },
             { img: hotelService, title: 'STAR HOTEL SERVICES' },
-            { img: staffTransport, title: 'STAFF TRANSPORTATION' },
             { img: carRental, title: 'CAR RENTALS' },
+            { img: schoolBus, title: 'SCHOOL TRANSPORTATION' },
+
           ].map((item, index) => (
             <div className="col-sm-6 col-lg-4" key={index}>
               <div className="card h-100 border-0 shadow-sm red-border-card text-center">

@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/stts">
+     <BrowserRouter>
       <ScrollToTop />
       <Navbar />
       <Routes>

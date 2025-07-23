@@ -2,7 +2,6 @@
   "name": "stts-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shimjithsks.github.io/stts",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/dom": "^10.4.0",
@@ -31,6 +30,9 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "eslintConfig": {
     "extends": [

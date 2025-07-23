@@ -24,7 +24,7 @@ const fleetTabs = {
       { img: bus1, title: '50 Seater Bus' },
       { img: bus2, title: '60 Seater Bus' },
       { img: bus3, title: 'Labour Bus' },
-      { img: bus4, title: 'School Bus' },
+      { img: bus4, title: 'Multiple School Buses' },
     ],
   },
   truck: {

@@ -5,7 +5,11 @@ import move2 from '../assets/move_2.jpg';
 import move3 from '../assets/move_3.jpg';
 import move4 from '../assets/move_4.jpg';
 import truck from '../assets/truck.jpg';
-
+import Act from '../assets/actlogo1.png';
+import Emkan from '../assets/emkan_engineering.jpg';
+import Infra from '../assets/infraroad_trading_logo.jpg';
+import Talabat from '../assets/talabath_logo.png';
+import Kentzo from '../assets/Kentzlogo.png';
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
 
@@ -189,25 +193,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trusted Clients */}
-      <section className="trusted-clients py-5 bg-white">
-        <div className="container" data-aos="fade-up">
-          <div className="text-center mb-5">
-            <h2 className="fw-bold display-5 text-black">Our Valued Clients</h2>
-            <p className="lead text-muted">We Promised. They Trusted. We Delivered.</p>
+     {/* Trusted Clients */}
+<section className="trusted-clients py-5 bg-white">
+  <div className="container" data-aos="fade-up">
+    <div className="text-center mb-5">
+      <h2 className="fw-bold display-5 text-black">Our Valued Clients</h2>
+      <p className="lead text-muted">We Promised. They Trusted. We Delivered.</p>
+    </div>
+    <div className="clients-carousel-wrapper overflow-hidden">
+      <div className="clients-carousel d-flex flex-nowrap align-items-center">
+        {[
+          { logo: Act, name: "Advanced Construction Technologies" },
+          { logo: Emkan, name: "Emkan Engineering" },
+          { logo: Infra, name: "Infraroad" },
+          { logo: Talabat, name: "Talabat" },
+          { logo: Kentzo, name: "Kentz" },
+        ].map((client, i) => (
+          <div className="client-logo-wrapper text-center flex-shrink-0 px-3" key={i}>
+            <img src={client.logo} alt={client.name} className="client-logo" />
+            <div className="client-name">{client.name}</div>
           </div>
-          <div className="clients-carousel-wrapper overflow-hidden">
-            <div className="clients-carousel d-flex flex-nowrap align-items-center">
-              {[move1, move2, move3, move4, move1, move2].map((logo, i) => (
-                <div className="client-logo-wrapper text-center flex-shrink-0 px-3" key={i}>
-                  <img src={logo} alt={`Client ${i + 1}`} className="client-logo" />
-                  <div className="client-name">Client {i + 1}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }

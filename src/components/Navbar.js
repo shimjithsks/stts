@@ -59,7 +59,7 @@ export default function Navbar() {
               <i className="bi bi-facebook"></i>
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/secrettransportation/?igsh=MTllM2FocGM2aWtnZw%3D%3D#"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"

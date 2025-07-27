@@ -405,7 +405,6 @@ export default function Home() {
 {/* Clients */}
 <section
   className="trusted-clients py-5 bg-white"
-  role="region"
   aria-labelledby="clients-heading"
 >
   <div className="container" data-aos="fade-up">

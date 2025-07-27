@@ -401,8 +401,7 @@ export default function Home() {
   </div>
 </section>
 
-
-{/* Clients */}
+ {/* Clients */}
 <section
   className="trusted-clients py-5 bg-white"
   aria-labelledby="clients-heading"
@@ -419,7 +418,7 @@ export default function Home() {
 
     <div className="clients-carousel-wrapper overflow-hidden">
       <div
-        className="clients-carousel d-flex flex-wrap align-items-center justify-content-center"
+        className="clients-carousel d-flex flex-nowrap align-items-center justify-content-start"
         role="list"
         aria-label="Trusted clients logos"
       >
@@ -431,7 +430,7 @@ export default function Home() {
           { logo: Kentzo, name: "Kentz" }
         ].map((client, i) => (
           <div
-            className="client-logo-wrapper text-center px-4 mb-4"
+            className="client-logo-wrapper text-center flex-shrink-0 px-4"
             key={i}
             role="listitem"
           >

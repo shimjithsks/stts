@@ -427,7 +427,7 @@ export default function Home() {
           { logo: Emkan, name: "Emkan" },
           { logo: Infra, name: "Infraroad" },
           { logo: Talabat, name: "Talabat" },
-          // { logo: Kentzo, name: "Kentz" }
+          // { logo: Kentzo, name: "Kentz" } 
         ].map((client, i) => (
           <div
             className="client-logo-wrapper text-center flex-shrink-0 px-4"

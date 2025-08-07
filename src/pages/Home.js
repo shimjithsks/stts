@@ -9,7 +9,6 @@ import Act from '../assets/actlogo1.png';
 import Emkan from '../assets/emkan_engineering.jpg';
 import Infra from '../assets/infraroad_trading_logo.jpg';
 import Talabat from '../assets/talabath_logo.png';
-import Kentzo from '../assets/Kentzlogo.png';
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -427,7 +426,7 @@ export default function Home() {
           { logo: Emkan, name: "Emkan" },
           { logo: Infra, name: "Infraroad" },
           { logo: Talabat, name: "Talabat" },
-          // { logo: Kentzo, name: "Kentz" } 
+          // { logo: Kentzo, name: "Kentz" }
         ].map((client, i) => (
           <div
             className="client-logo-wrapper text-center flex-shrink-0 px-4"
